@@ -12,7 +12,8 @@ function parse(){
     Parse.initialize("BnGiWDWDjLiOakfubnazWrs60ToHwgHy40lspsjt", "0xW4A6mq0vl0H29GaApu9xHu9MBaARcua2pB6Bur");
     TestObject = Parse.Object.extend("Jobs");
     username=Parse.User.current().get("username");
-    document.getElementById("welcome").innerHTML="Welcome, "+username+"!";
+    var name = username.split("@");
+    document.getElementById("username").innerHTML=name[0]+"'s notes";
     /*var testObject = new TestObject();
     testObject.set("userId","Alex");
     testObject.save(null, {
