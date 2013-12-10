@@ -55,6 +55,9 @@
       color: #0000ff;
       background-color: gray;  
     } 
+    #space{
+      padding-bottom: 10%;
+    }
   </style>
   
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -90,30 +93,33 @@
     <div class="jumbotron">
       <h1 id="username">Jumbotron heading</h1>
       <p class="lead">insert motto here</p>
-      <p><a class="btn btn-lg btn-success" href="#" role="button">Add note</a></p>
+      <center><form class="form-signin" role="form" style="font-weight:200; width:35%;">
+          <input type="text" id="message" class="form-control" placeholder="Enter note here" maxlength="10000">
+          <button class="btn btn-lg btn-default btn-block" type="button" onClick="post()" style="font-weight: 200;" >Add your note</button>
+        </form></center>
     </div>
     <div class="jumbotron">
     <div class="row marketing">
       <div class="col-lg-6">
         <h4>Note1</h4>
-        <p>Ate breakfast.</p>
+        <p id="space" >Ate breakfast.</p>
 
         <h4>Note2</h4>
-        <p>Thought about life.</p>
+        <p id="space" >Thought about life.</p>
 
         <h4>Note3</h4>
-        <p>Ate again.</p>
+        <p id="space" >Ate again.</p>
       </div>
 
       <div class="col-lg-6">
         <h4>Note4</h4>
-        <p>Went fishing.</p>
+        <p id="space" >Went fishing.</p>
 
         <h4>Note5</h4>
-        <p>Shot a dude.</p>
+        <p id="space" >Shot a dude.</p>
 
         <h4>Note6</h4>
-        <p>Buried the dude.</p>
+        <p id="space" >Buried the dude.</p>
       </div>
     </div>
   </div>
