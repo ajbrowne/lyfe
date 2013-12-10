@@ -73,7 +73,7 @@
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="./dist/js/bootstrap.min.js"></script>
-  <script src="./dist/js/profile.js"></script>
+  <script src="./profile.js"></script>
   <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
   <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
   <script type="text/javascript" src="./notLoggedIn.js"></script>
@@ -103,17 +103,15 @@
   <div class="container">
     <div class="jumbotron">
       <h1 id="username">Profile Settings</h1>
-      <form class="form-signin" role="form" style="font-weight:200; width:35%;">
           <h4 class="descriptor">Alias:</h4>
           <input type="text" id="alias" class="form-control" placeholder="Enter Alias" maxlength="10000">
-          <h4 class="descriptor">Motto:</h4>
-           <input type="text" id="motto" class="form-control" placeholder="Enter Motto" maxlength="10000">
-           <h4 class="descriptor">Motto:</h4>
-            <input type="text" id="message2" class="form-control" placeholder="Enter note here" maxlength="10000">
+          <h4 class="descriptor">First Name:</h4>
+           <input type="text" id="fn" class="form-control" placeholder="Enter First Name" maxlength="10000">
+           <h4 class="descriptor">Last Name:</h4>
+            <input type="text" id="ln" class="form-control" placeholder="Enter Last Name" maxlength="10000">
             <h4 class="descriptor">Motto:</h4>
-             <input type="text" id="message3" class="form-control" placeholder="Enter note here" maxlength="10000">
-          <button id="submit" class="btn btn-lg btn-default btn-block" type="button" onClick="post()" style="font-weight: 200;" >Confirm Changes</button>
-        </form>
+             <input type="text" id="motto" class="form-control" placeholder="Enter Motto" maxlength="10000">
+          <button id="submit" class="btn btn-lg btn-default btn-block" type="button" onClick="update()" style="font-weight: 200;" >Confirm Changes</button>
     </div>
 
     <center><footer style="background-color: #ffffff">
