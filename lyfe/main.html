@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="./dist/css/bootstrap.min2.css" rel="stylesheet" media="screen">
+  <link href="./dist/css/jumbotron-narrow.css" rel="stylesheet">
+  <style>
+    body{
+      font-weight: 200;
+    }
+    form{
+      font-weight:200;
+    }
+    #header{
+      background: #ffffff;
+      font-weight:200;
+    }
+    #welcome{
+      font-weight:100;
+      font-size: 50px;
+
+    }
+
+    #tableContainer h1{
+      font-weight: 200;
+    }
+
+    #tableContainer h2{
+      font-weight:100;
+    }
+
+    #header h3{
+      font-weight:200;
+    }
+    #huge{
+      font-size: 96px;
+      font-weight: 100;
+      padding-top: 10%;
+      padding-bottom: 5%;
+      margin-bottom: 0px;
+    }
+    p tagline{
+      padding-top:0px;
+      margin-top: 0px;
+      color: #aaaaaa;
+    }
+    #excelDataTable{
+      width:100%;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus{
+      color: #0000ff;
+      background-color: gray;  
+    } 
+  </style>
+  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="./dist/js/bootstrap.min.js"></script>
+  <script src="./dist/js/main.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+  <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+  <script type="text/javascript" src="./notLoggedIn.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    function logoutHome(){
+     Parse.initialize("BnGiWDWDjLiOakfubnazWrs60ToHwgHy40lspsjt", "0xW4A6mq0vl0H29GaApu9xHu9MBaARcua2pB6Bur");
+     Parse.User.logOut();
+     window.location.replace('./index.html');
+   }
+ </script>
+
+</head>
+
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="./main.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>  
+      <li><a href="./index.html" onClick="logoutHome()">Logout</a></li>
+    </ul>
+    <h3 class="text-muted" style:"weight:200;"><a href="http://twitter.com/_ly_fe_">lyfe</a></h3>
+  </div>
+</div>
+<body data-spy="scroll" data-target="#menubar" onload="parse()">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Jumbotron heading</h1>
+      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+    </div>
+
+    <div class="row marketing">
+      <div class="col-lg-6">
+        <h4>Subheading</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+        <h4>Subheading</h4>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <h4>Subheading</h4>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <div class="col-lg-6">
+        <h4>Subheading</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+        <h4>Subheading</h4>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <h4>Subheading</h4>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+    </div>
+
+    <center><footer style="background-color: #ffffff">
+       <a href="http://twitter.com/_ly_fe_">@_ly_fe_</a>
+       <br><small><font color=#8f8f8f>Your life. Kept here.</font></small>
+    </footer></center>
+
+ </div> <!-- /container -->
+</body>
+</html>

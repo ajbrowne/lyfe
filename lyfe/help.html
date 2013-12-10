@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="./dist/css/bootstrap.min2.css" rel="stylesheet" media="screen">
+  <link href="./dist/css/jumbotron-narrow.css" rel="stylesheet">
+  <style>
+    body{
+      font-weight: 200;
+    }
+    form{
+      font-weight:200;
+    }
+    #header{
+      background: #ffffff;
+      font-weight:200;
+    }
+    #header h3{
+      font-weight:200;
+    }
+    #squish{
+      padding-left:360px;
+      padding-right:360px;
+    }
+    #huge{
+      font-size: 76px;
+      font-weight: 100;
+      padding-bottom: 2%;
+      margin-bottom: 0px;
+    }
+    #kinda-huge{
+      font-size: 50px;
+      font-weight: 100;
+      padding-bottom: 2%;
+      margin-bottom: 0px;
+    }
+    #insult{
+      padding-left: 40px;
+    }
+    p tagline{
+      padding-top:0px;
+      margin-top: 0px;
+      color: #aaaaaa;
+    }
+    #excelDataTable{
+      width:100%;
+    }
+    footer{
+      position:fixed;
+      bottom:0px;
+      width:100%;
+      padding-bottom: 10px;
+    }
+  </style>
+  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="./dist/js/bootstrap.min.js"></script>
+  <script src="./dist/js/submit.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+  <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+  <script type="text/javascript" src="./admin.js"></script>
+  <script type="text/javascript">
+    function logoutHome(){
+      Parse.initialize("BnGiWDWDjLiOakfubnazWrs60ToHwgHy40lspsjt", "0xW4A6mq0vl0H29GaApu9xHu9MBaARcua2pB6Bur");
+      Parse.User.logOut();
+      window.location.replace('./index.html');
+    }
+  </script>
+
+</head>
+
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li><a href="./main.html">Home</a></li>
+      <li><a href="./add.html">Share</a></li>
+      <li><a href="./submit.html">Submit</a></li>
+      <li class="active"><a href="./about.html">About</a></li>
+      <li><a href="./index.html" onClick="logoutHome()">Logout</a></li>
+    </ul>
+    <h3 class="text-muted" style:"weight:200;"><a href="http://twitter.com/lovrhatr">@lovrhatr</a></h3>
+  </div>
+</div>
+
+<body data-spy="scroll" data-target="#menubar" onload="init()">
+ <div class="container-fluid" id="about">
+  <center><h1>About Us</h1>
+    <p class="lead">We started out small</p></center>
+    <p id="squish" >Lovrhatr started as a project at TechHacks 2013, taking fourth place at the contest. We wanted to make it possible for you to tell your friends how you are feeling each day without having to go to your twitter and take the time to tweet them individually. Now you can.</p>
+    <center><p class="lead">How does lovhatr work?</p></center>
+    <p id="squish" >We allow you to register and log into our site, keeping your jobs and suggestions separate from everyone else's. Once you are in, you can set a love or hate message to be sent to the twitter handle of your choice twice a day, once at 7 am and again at 5 pm. And that's it. You don't even have to have a twitter of your own!</p>
+    <center><p class="lead">Time to get started!</p></center>
+    <p id="squish" >Click on the share button above to start sending love or hate to your friends or enemies. You can also go to the submit page to send us some suggestions of your own. We're great here at lovrhatr, but we can't think of everything!</p>
+  </div>
+</body>
+
+<footer style="background-color: #ffffff">
+  <center>
+    <a href="http://twitter.com/lovrhatr">@lovrhatr</a>
+    <br><small><font color=#8f8f8f>sharing how you <i>really</i> feel</font></small>
+  </center>
+</footer>
+</html>
