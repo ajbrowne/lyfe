@@ -4,6 +4,17 @@ function parse(){
   username=Parse.User.current().get("username");
   var name = username.split("@");
   document.getElementById("username").innerHTML=name[0];
+  var User = Parse.Object.extend("User");
+  var user = new Parse.Query(User);
+  user.equalTo("username", username);
+  user.first({
+    success: function(object) {
+      document.getElementById("motto").innerHTML=object.get("motto");
+    },
+    error: function(error) {
+      alert("Error: " + error.code + " " + error.message);
+    }
+  });
 }
 
 function post(){

@@ -11,10 +11,10 @@ function parse(){
 				document.getElementById("alias").value=result.get("alias");
 			}
 			if (result.get("first_name") != null){
-				document.getElementById("fn").value=result.get("fn");
+				document.getElementById("fn").value=result.get("first_name");
 			}
 			if (result.get("last_name") != null){
-				document.getElementById("ln").value=result.get("ln");
+				document.getElementById("ln").value=result.get("last_name");
 			}
 			if (result.get("motto") != null){
 				document.getElementById("motto").value=result.get("motto");
@@ -29,7 +29,6 @@ function parse(){
 
 function update(){
 	username=Parse.User.current().get("username");
-	alert(username);
 	var User = Parse.Object.extend("User");
 	var user = new Parse.Query(User);
 	user.equalTo("username", username);
